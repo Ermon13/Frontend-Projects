@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Lovers Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Added a font-family for better appearance */
+        }
+
+        header, footer {
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .blue {
+            background-color: #1736e7; /* Dark blue background */
+            padding: 10px;
+        }
+
+        #banner img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes any extra spacing below the image */
+        }
+
+        .sec, .tw {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+            justify-content: center; /* Centers items horizontally */
+            gap: 10px; /* Adds space between items */
+            padding: 20px;
+        }
+
+        .sec-item, .tw-item {
+            flex: 1;
+            min-width: 200px; /* Minimum width for each image container */
+        }
+
+        .sec-item img, .tw-item img {
+            width: 100%;
+            height: auto;
+            display: block; /* Ensures images take up full width of their container */
+        }
+
+        .more {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2rem; /* Adjusted font-size */
+        }
+
+        footer {
+            background-color: #1736e7; /* Same background color as header */
+            padding: 10px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+    .sec #bet {
+        display: none;
+    }
+
+    .sec, .tw {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-item {
+        margin: 15px 0; /* Adds vertical spacing between items */
+    }
+
+    .more {
+        margin: 10px 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="blue"> <h1>Puppy Lovers Page</h1> </div>
+        <div id="banner"> <img src="images/banner-puppies.jpg" alt="Banner with puppies"> </div>
+    </header>
+    <section>
+        <div class="sec">
+            <div class="sec-item" id="A"> <img src="images/puppy-1.jpg" alt="Puppy 1"> </div>
+            <div class="sec-item" id="bet"> <h1>Puppy<br>Missing<br>Here!!</h1> </div>
+            <div class="sec-item" id="C"> <img src="images/puppy-2.jpg" alt="Puppy 2"> </div> 
+        </div>
+        <div class="more"><h1>More Puppies</h1></div>
+        <div class="tw">
+            <div class="tw-item"><img src="images/puppy-3.jpg" alt="Puppy 3"></div>
+            <div class="tw-item"><img src="images/puppy-4.jpg" alt="Puppy 4"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="blue"> <h1>Am ϖϖ</h1> </div>
+    </footer>
+</body>
+
+</html>

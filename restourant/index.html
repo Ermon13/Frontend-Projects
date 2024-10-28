@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .absolute, .relative {
+            position: relative;
+        }
+        .triple .ham1, .triple .ham2, .triple .ham3 {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <i class="ri-arrow-up-s-line absolute bottom-5 left-5"></i>
+
+    <header class="flex sticky top-0 px-10 py-5 bg-white justify-between w-full font-bold text-lg">
+        <div class="logo w-20%">
+            <img src="./img/logo.png" alt="Logo" width="120px" height="48px">
+        </div>
+        <div class="navbar flex-1 text-center">
+            <a href="#" class="list-none inline-block px-5">Home</a>
+            <a href="#" class="list-none inline-block px-5">Shop</a>
+            <a href="#" class="list-none inline-block px-5">Featured</a>
+            <a href="#" class="list-none inline-block px-5">Pages</a>
+            <a href="#" class="list-none inline-block px-5">Blogs</a>
+            <a href="#" class="list-none inline-block px-5">Contact</a>
+        </div>
+        <div class="flex items-center">
+            <i class="ri-menu-line list-none inline-block px-5"></i>
+            <div class="navIcons flex">
+                <i class="ri-search-line list-none inline-block px-5"></i>
+                <i class="ri-user-line list-none inline-block px-5"></i>
+                <i class="ri-heart-2-line list-none inline-block px-5"></i>
+                <i class="ri-shopping-cart-line list-none inline-block px-5"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="section1 flex items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('img/hero.jpg');">
+        <div class="text-center text-white">
+            <span class="block text-xl">Style Destination</span>
+            <h1 class="text-6xl font-bold my-4">Burger Delicious</h1>
+            <p class="mb-6">It is long established fact that the reader will be <br> distracted by the readable content</p>
+            <button class="bg-yellow-500 text-white py-3 px-6 rounded-lg">SHOP NOW</button>
+        </div>
+    </section>
+
+    <section class="section2 py-20">
+        <div class="text-center mb-10">
+            <span class="block text-lg">Crispy, Every Bite Taste</span>
+            <h1 class="text-4xl font-bold my-4">Visit Our Store</h1>
+        </div>
+        <div class="flex justify-between mb-10">
+            <div class="ham1 p-4 text-center">
+                <img src="img/store1.png" alt="Humberger Vegie" class="mx-auto mb-4">
+                <h6 class="font-semibold text-lg mb-2">Humberger Vegie</h6>
+                <p>It's a long established fact that a reader.</p>
+            </div>
+            <div class="ham2 p-4 text-center">
+                <img src="img/store2.png" alt="Hum Sandwich" class="mx-auto mb-4">
+                <h6 class="font-semibold text-lg mb-2">Hum Sandwich</h6>
+                <p>It's a long established fact that a reader.</p>
+            </div>
+            <div class="ham3 p-4 text-center">
+                <img src="img/store3.png" alt="Sushi Sashimi" class="mx-auto mb-4">
+                <h6 class="font-semibold text-lg mb-2">Sushi Sashimi</h6>
+                <p>It's a long established fact that a reader.</p>
+            </div>
+        </div>
+        <div class="two-items-container flex justify-between mb-10" >
+            <div id="two1" class="w-1/2 p-4 text-center">
+                <span class="block text-lg">Fone Store</span>
+                <h2 class="text-3xl font-bold my-4">Delicious Food</h2>
+                <button class="bg-yellow-500 text-white py-3 px-6 rounded-lg">SHOP NOW</button>
+            </div>
+            <div id="two2" class="w-1/2 p-4 text-center">
+                <span class="block text-lg">Fone Store</span>
+                <h2 class="text-3xl font-bold my-4">Other Flavours</h2>
+                <button class="bg-yellow-500 text-white py-3 px-6 rounded-lg">SHOP NOW</button>
+            </div>
+        </div>
+        <div class="demo-items mb-10">
+            <div class="text-center mb-10">
+                <span class="block text-lg">Food Items Popular Dishes</span>
+                <h2 class="text-4xl font-bold my-4">Best Seller</h2>
+            </div>
+            <div class="demo-items-figure flex flex-wrap justify-between">
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s1.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s2.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s3.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s4.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="enjoy text-center py-20 bg-gray-100">
+            <h1 class="text-5xl font-bold mb-6">Enjoy The Delicious Taste</h1>
+            <p class="mb-6">When you've got your health, you got everything.</p>
+            <button class="bg-yellow-500 text-white py-3 px-6 rounded-lg">SHOP NOW</button>
+        </div>
+
+        <div class="demo-items mb-10">
+            <div class="text-center mb-10">
+                <span class="block text-lg">Food Items Popular Dishes</span>
+                <h2 class="text-4xl font-bold my-4">Best Seller</h2>
+            </div>
+            <div class="demo-items-figure flex flex-wrap justify-between">
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s1.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s2.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s3.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+                <div class="images w-1/4 p-4">
+                    <figure class="text-center">
+                        <img src="img/s4.webp" alt="Demo Item" class="mx-auto mb-4">
+                        <figcaption class="text-lg">Demo Item <br> <span class="price">$23.00</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <section class="blogs py-20 bg-gray-100">
+            <div class="text-center mb-10">
+                <span class="block text-lg">Blog & News</span>
+                <h2 class="text-4xl font-bold my-4">OUR BLOGS</h2>
+            </div>
+            <div class="figures blogs flex justify-between">
+                <figure class="w-1/3 p-4">
+                    <img src="img/b1.webp" alt="Blog 1" class="mx-auto mb-4">
+                    <div class="date flex justify-center mb-4">
+                        <span class="day block text-2xl">22</span>
+                        <span class="month block text-lg ml-2">May</span>
+                    </div>
+                    <figcaption class="text-center">
+                        <h6 class="font-semibold text-xl mb-2">How To Win The Attention Of New Clients: Tips & Tricks</h6>
+                        <p>Posted By Admin / 3 Comments</p>
+                    </figcaption>
+                </figure>
+                <figure class="w-1/3 p-4">
+                    <img src="img/b2.webp" alt="Blog 2" class="mx-auto mb-4">
+                    <div class="date flex justify-center mb-4">
+                        <span class="day block text-2xl">22</span>
+                        <span class="month block text-lg ml-2">May</span>
+                    </div>
+                    <figcaption class="text-center">
+                        <h6 class="font-semibold text-xl mb-2">How To Win The Attention Of New Clients: Tips & Tricks</h6>
+                        <p>Posted By Admin / 3 Comments</p>
+                    </figcaption>
+                </figure>
+                <figure class="w-1/3 p-4">
+                    <img src="img/b3.webp" alt="Blog 3" class="mx-auto mb-4">
+                    <div class="date flex justify-center mb-4">
+                        <span class="day block text-2xl">22</span>
+                        <span class="month block text-lg ml-2">May</span>
+                    </div>
+                    <figcaption class="text-center">
+                        <h6 class="font-semibold text-xl mb-2">How To Win The Attention Of New Clients: Tips & Tricks</h6>
+                        <p>Posted By Admin / 3 Comments</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto flex justify-between">
+            <div class="socials w-1/4 text-center">
+                <img src="img/logo.png" width="150px" height="50px" alt="Logo" class="mx-auto mb-4">
+                <p class="mb-4">We believe it has the power to do amazing things.</p>
+                <div class="flex justify-center space-x-4">
+                    <i class="ri-facebook-circle-fill text-2xl"></i>
+                    <i class="ri-instagram-fill text-2xl"></i>
+                    <i class="ri-twitter-fill text-2xl"></i>
+                    <i class="ri-youtube-fill text-2xl"></i>
+                </div>
+            </div>
+            <div class="useful w-1/4">
+                <h2 class="font-bold text-xl mb-4">Useful Links</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Support</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Terms Of Use</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Site Map</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Expert Testimony</a></li>
+                </ul>
+            </div>
+            <div class="services w-1/4">
+                <h2 class="font-bold text-xl mb-4">Our Services</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Track Your Order</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Returns Policy</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Warranty & Repair</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">My Account</a></li>
+                </ul>
+            </div>
+            <div class="contacts w-1/4">
+                <h2 class="font-bold text-xl mb-4">CONTACTS</h2>
+                <ul class="space-y-2">
+                    <li>Work Time: Monday-Friday</li>
+                    <li>11:00 AM - 00:00 PM</li>
+                    <li>Address: LA, Vehicula Street, 58</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
