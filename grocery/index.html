@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page with Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="relative min-h-screen bg-[url('Image.png')] bg-cover bg-center px-4 sm:px-10 lg:px-28 py-5">
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between">
+            <img src="logo.png" alt="Company Logo" class="w-32 sm:w-40 cursor-pointer">
+            <ul class="hidden sm:flex flex-1 justify-center space-x-4 text-white">
+                <li><a href="#" class="no-underline hover:text-yellow-300">Home</a></li>
+                <li><a href="#" class="no-underline hover:text-yellow-300">About</a></li>
+                <li><a href="#" class="no-underline hover:text-yellow-300">Features</a></li>
+                <li><a href="#" class="no-underline hover:text-yellow-300">Contact</a></li>
+            </ul>
+            <img src="cart.png" alt="Shopping Cart" class="w-6 sm:w-8 cursor-pointer">
+            <button class="block sm:hidden ml-4 text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Main Content -->
+        <div class="text-white mt-48 max-w-lg  text-center px-4 justify-between ">
+            <h1 class="text-4xl sm:text-6xl font-semibold leading-normal">
+                Groceries <br> delivery in <span class="font-extralight text-yellow-300">15 mins</span>
+            </h1>
+            <p class="mt-4 text-base sm:text-lg">Grocify offers a wide range of products, including fresh produce, meals, dairy, baked goods, and non-perishable items.</p>
+            <div class="mt-8">
+                <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-6 sm:px-8 font-medium text-black hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border inline-block mr-4">Order Now</a>
+                <a href="#" class="inline-block">Download App <span class="text-lg inline-block rotate-90">&#10148;</span></a>
+            </div>
+        </div>
+        <img src="grocery-image.png" alt="Grocery Items" class="absolute bottom-0 right-0 w-auto h-4/5 hidden lg:block">
+    </div>
+</body>
+</html>
